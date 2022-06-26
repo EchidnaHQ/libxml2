@@ -14,6 +14,9 @@
  * TODOs:
  *   - XML Schemas validation
  */
+#ifdef __clang__
+#define HAVE_VA_COPY
+#endif
 #define IN_LIBXML
 #include "libxml.h"
 
