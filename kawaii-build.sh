@@ -1,0 +1,9 @@
+#/bin/sh
+
+. ../shared.sh
+
+../cmake.sh -DLIBXML2_WITH_LZMA=OFF \
+    -DLIBXML2_WITH_FTP=OFF -DLIBXML2_WITH_HTTP=OFF  \
+    -DLIBXML2_WITH_PYTHON=OFF -DLIBXML2_WITH_TESTS=OFF
+
+make install -j4
